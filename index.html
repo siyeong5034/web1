@@ -3,18 +3,66 @@
 <head>
   <title>wellcome</title>
   <meta charset="utf-8">
-</head>
+  <style>
+  body{
+    margin:0;
+  }
+  a {
+    color:black;
+    text-decoration: none;
+  }
+  h1 {
+    font-size:45px;
+    text-align:center;
+    border-bottom:1px solid black;
+    margin:0;
+    padding:20px;
+  }
+  ol {
+    border-right:1px solid gray;
+    width:100px;
+    margin:0;
+    padding:20px;
+  }
+  #grid {
+    display:grid;
+    grid-template-columns: 150px 1fr;
+  }
+  #grid ol {
+    padding-left:35px;
+  }
+  #grid #article {
+    padding-left:25px;
+  }
+  @media(max-width:800px){
+    #grid {
+      display:block;
 
+      }
+      ol {
+        border-right:none;
+      }
+      h1 {
+        border-bottom:none;
+      }
+  }
+  </style>
+</head>
 <body>
-  <h1><a href="index.html">2018년10월5일의 일기</a></h1>
-<Ul>
-  <li><a href="1.html">1. HTML</a></li>
-  <li><a href="2.html">2. CSS</a></li>
-  <li><a href="3.html">3. JavaScript</a></li>
-</Ul>
-<h2>일을 시작하면 임계점을 넘긴일</h2>
-<p>18.10.04 (목)
-날씨 : 밖에 안 나가봐서 모름
-</P>
+  <h1><a href="index.html">뼈있는 아무말 대잔치</a></h1>
+<div id="grid">
+    <ol>
+      <li><a href="1.html"> HTML</a></li>
+      <li><a href="2.html" id="active">CSS</a></li>
+      <li><a href="3.html">JavaScript</a></li>
+    </ol>
+  <div id="article">
+    <h2>일을 시작하면 임계점을 넘긴일</h2>
+    <p>
+      시작이 어렵다고 하지만, 나는 끝을 내는 일이 훨씬 어려운 것 같다. 20대에는 성취한 일보다 포기한 일이 압도적으로 많다. 어렵고 하기 싫은일 투성이 였지만, 그래도 미래에 도움이 될것 같은 일은 꾸역꾸역 끝까지 해냈다. 악착같이 끝까지 해냈다고 능력이 비약적으로 발전하지는 않았지만, 그렇게 끝을 봤던 것은 스티브 잡스의 말처럼 하나의 점이 되어 미래에 다른 일과 연결되어 큰 도움이 되는 경우가 많았다.
+    </P>
+  </div>
+</div>
+
 </body>
 </html>
